@@ -47,6 +47,7 @@
     <Compile Include="IO\BootSector.cs" />
     <Compile Include="IO\HardDisk.cs" />
     <Compile Include="IO\LgeDirEntry.cs" />
+    <Compile Include="IO\PhysicalHardDisk.cs" />
     <Compile Include="IO\Substream.cs" />
     <Compile Include="IO\Vmdk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

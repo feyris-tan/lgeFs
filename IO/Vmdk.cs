@@ -61,5 +61,11 @@ namespace LgeFs
             parent.Read(result, 0, SectorSize);
             return result;
         }
+
+        public override void Dispose()
+        {
+            parent.Close();
+            parent.Dispose();
+        }
     }
 }

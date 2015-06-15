@@ -6,7 +6,7 @@ using DNA;
 
 namespace LgeFs
 {
-    public abstract class HardDisk
+    public abstract class HardDisk : IDisposable
     {
         internal abstract BinaryEndianReader GetStream();
         protected abstract byte[] GetSector(int no);
@@ -86,5 +86,7 @@ namespace LgeFs
                 return rootDir;
             }
         }
+
+        public abstract void Dispose();
     }
 }
